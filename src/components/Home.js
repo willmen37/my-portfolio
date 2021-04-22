@@ -1,5 +1,5 @@
 import React from "react";
-import image from "../conectivity.gif";
+import image from "../world.jpg";
 
 export default function Home() {
     return (
@@ -10,9 +10,9 @@ export default function Home() {
                 className="absolute object-cover w-full h-full" 
             />
 
-            <section className="relative flex justify-center min-h-screen pt-10 lg:pt-64 px-8">
-                <h1 className="text-6xl text-green-100 font-bold cursive leading-none lg:leading-snug home-name ">
-                Hola! I'm William.</h1>
+            <section className=" container mx-auto relative flex justify-center min-h-screen pt-10 lg:pt-64 px-8">
+                <h1 className="text-6xl text-yellow-300 font-bold cursive leading-none lg:leading-snug home-name ">
+                 My Portfolio site!</h1>
             </section>
         </main>
     )
