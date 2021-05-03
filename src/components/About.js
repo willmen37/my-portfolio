@@ -28,7 +28,7 @@ export default function About() {
 
     return (
         <main className="relative">
-            <img src={typewriter} alt="developer image" className=" absolute w-full"/>
+            <img src={typewriter} alt="developer times" className=" absolute w-full"/>
                 <div className="p-10 lg:pt-48 container mx-auto relative" >
                 <section className="bg-blue-300 rounded-lg shadow-2xl lg:flex p-20">
                     <img src={urlFor(author.authorImage).url()} className="rounded w-50 h-50 lg:w-80 lg:h-80 mr-10" alt={author.name}/>
