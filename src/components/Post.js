@@ -1,6 +1,7 @@
 import React, {useState, useEffect } from "react";
 import {Link} from "react-router-dom";
 import sanityClient from "../client.js";
+import image from "../wood.jpg"
 
 
 export default function Post() {
@@ -26,10 +27,15 @@ export default function Post() {
 
     return (
         
-        <main className="bg-blue-200 min-h-screen p-12">
-            <section className="container mx-auto">
-                <h1 className="text-5xl flex justify-center cursive">Blog Posts Page</h1>
-                <h2 className="text-lg text-gray-600 flex justify-center mb-12 ">Welcome to My Page of Blog Post!</h2>
+        <main >
+            <img
+                src={image}
+                alt="development"
+                className="absolute w-full"
+            />
+            <section className="container mx-auto relative">
+                <h1 className="text-8xl flex justify-center font-bold cursive mb-5">Blog Posts Page</h1>
+                <h2 className="text-4xl flex justify-center mb-20 ">Welcome to My Page of Blog Post!</h2>
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {postData && postData.map((post, index) =>( 
                     <article>

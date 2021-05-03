@@ -1,7 +1,6 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
-
-import image from "../galaxyblue.jpg";
+import {SocialIcon} from "react-social-icons"
+import image from "../conectivity.jpg";
 
 export default function Home() {
     return (
@@ -12,32 +11,18 @@ export default function Home() {
                 className=" absolute w-full" 
             />
                 <section className=" container mx-auto relative flex justify-center min-h-screen pt-10 lg:pt-64 px-8">
-                
-                    <h1 className="text-8xl text-yellow-300  cursive leading-none lg:leading-snug home-name ">
-                    My Portfolio site!</h1>
                     <div>
-                    <NavLink to="/post" 
-                    className="inline-flex items-center py-3 px-3 my-6 rounded text-red-200 hover:text-green-200"
-                    activeClassName = "text-red-100 bg-green-600"
-                    >
-                    Blog Posts
-                    </NavLink>
-
-                    <NavLink to = "/project"    
-                        className="inline-flex items-center py-3 px-3 my-6 rounded text-red-200 hover:text-green-200"
-                        activeClassName = "text-red-100 bg-green-600"
-                        >
-                        Projects
-                    </NavLink>
-
-                    <NavLink to = "/about" 
-                        className="inline-flex items-center py-3 px-3 my-6 rounded text-red-200 hover:text-green-200"
-                        activeClassName = "text-red-100 bg-green-600"
-                        >
-                        About Me!
-                    </NavLink>
+                    <h1 className="text-8 xl text-green-200  cursive leading-none lg:leading-snug home-name mb-10 ">
+                    My Portfolio site</h1>
+                    
+                    <div>
                     </div>
-
+                        <h2 className="text-5xl text-gray-200 text-bold cursive leading-none mb-8 "> Contact Me: </h2>
+                        <SocialIcon url="https://www.facebook.com/WilMenMor" className="mr-4 hover:shadow-lg " target="_blank" fgColor="#fff" style={{height:80, width:80}}/>
+                        <SocialIcon url="https://github.com/willmen37" className="mr-4 hover:shadow-lg" target="_blank" fgColor="#fff" style={{height:80, width:80}}/>
+                        <SocialIcon url="https://www.linkedin.com/in/william-mendez-165673201/" className="mr-4 hover:shadow-lg" target="_blank" fgColor="#fff" style={{height:80, width:80}}/>
+                    </div>
+                
             </section>
                 
             

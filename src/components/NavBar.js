@@ -1,6 +1,6 @@
 import React from "react"
 import { NavLink } from "react-router-dom";
-import {SocialIcon} from "react-social-icons"
+
 
 
 export default function NavBar() {
@@ -10,16 +10,36 @@ export default function NavBar() {
                 <nav className= "flex">
                     <NavLink to="/" exact 
                       activeClassName="text-white"
-                      className="inflex-flex items-center py-6 px-3 mr-4 text-red-100 hover:text-green-300 text-4xl cursive"
+                      className="inflex-flex items-center py-6 px-3 mr-4 text-red-100 hover:text-blue-300 text-4xl cursive"
                     >
                         William Mendez
                     </NavLink>
-                
+                    
                 </nav>
-                <div className=" inline-flex py3 px-3 my-6">
-                    <SocialIcon url="https://www.facebook.com/WilMenMor" className="mr-4 hover:shadow-lg " target="_blank" fgColor="#fff" style={{height:40, width:40}}/>
-                    <SocialIcon url="https://github.com/willmen37" className="mr-4 hover:shadow-lg" target="_blank" fgColor="#fff" style={{height:40, width:40}}/>
-                    <SocialIcon url="https://www.linkedin.com/in/william-mendez-165673201/" className="mr-4 hover:shadow-lg" target="_blank" fgColor="#fff" style={{height:40, width:40}}/>
+                
+                <div>
+
+                <NavLink to = "/project"    
+                    className="inline-flex items-center py-3 px-3 my-6 rounded text-lg text-red-200 hover:text-blue-200"
+                    activeClassName = "text-red-100 bg-green-600"
+                    >
+                    Projects
+                </NavLink>
+
+                <NavLink to="/post" 
+                className="inline-flex items-center py-3 px-3 my-6 rounded text-lg text-red-200 hover:text-blue-200"
+                activeClassName = "text-red-100 bg-green-600"
+                >
+                Blog Posts
+                </NavLink>
+
+                <NavLink to = "/about" 
+                    className="inline-flex items-center py-3 px-3 my-6 rounded text-lg text-red-200 hover:text-blue-200"
+                    activeClassName = "text-red-100 bg-green-600"
+                    >
+                    About Me!
+                </NavLink>
+                    
                 </div>
             </div>
         </header>
