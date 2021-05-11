@@ -18,7 +18,13 @@ export default function NavBar() {
                 </nav>
                 
                 <div>
-
+                <NavLink to = "/about" 
+                    className="inline-flex items-center py-3 px-3 my-6 rounded text-lg text-red-200 hover:text-blue-200"
+                    activeClassName = "text-red-100 bg-green-600"
+                    >
+                    About Me!
+                </NavLink>
+                    
                 <NavLink to = "/project"    
                     className="inline-flex items-center py-3 px-3 my-6 rounded text-lg text-red-200 hover:text-blue-200"
                     activeClassName = "text-red-100 bg-green-600"
@@ -33,13 +39,7 @@ export default function NavBar() {
                 Blog Posts
                 </NavLink>
 
-                <NavLink to = "/about" 
-                    className="inline-flex items-center py-3 px-3 my-6 rounded text-lg text-red-200 hover:text-blue-200"
-                    activeClassName = "text-red-100 bg-green-600"
-                    >
-                    About Me!
-                </NavLink>
-                    
+                
                 </div>
             </div>
         </header>
