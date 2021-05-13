@@ -38,6 +38,19 @@ export default {
         },
       ],
     },
+    {
+      name: 'skills',
+      title: 'Skills',
+      type: 'array',
+      of: [
+        {
+          title: 'Block',
+          type: 'block',
+          styles: [{title: 'Normal', value: 'normal'}],
+          lists: [],
+        },
+      ],
+    },
   ],
   preview: {
     select: {

@@ -34,8 +34,8 @@ export default function Post() {
                 className="absolute w-full"
             />
             <section className="container mx-auto relative">
-                <h1 className="text-8xl flex justify-center font-bold cursive mb-5">Blog Posts Page</h1>
-                <h2 className="text-4xl flex justify-center mb-20 ">Welcome to My Page of Blog Post!</h2>
+                <h1 className="text-8xl flex justify-center text-green-400 font-bold cursive mb-5">Blog Posts Page</h1>
+                <h2 className="text-4xl flex justify-center text-green-300 mb-20 ">Welcome to My Page of Blog Post!</h2>
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {postData && postData.map((post, index) =>( 
                     <article>

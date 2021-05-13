@@ -39,6 +39,10 @@ export default {
             type: "url",
         },
         {
+            name: "site",
+            type: "url",
+        },
+        {
             name: "tags",
             type: "array",
             of: [

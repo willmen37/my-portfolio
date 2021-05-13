@@ -14,6 +14,7 @@ export default function Project() {
             description,
             projectType,
             link,
+            site,
             tags
         }`
         )
@@ -32,8 +33,8 @@ export default function Project() {
             />
             
             <section className="container mx-auto relative" >
-                <h1 className= " text-9xl flex justify-center font-bold cursive mb-5">My Projects</h1>
-                <h2 className= "text-5xl flex justify-center mb-14"> Welcome To My Projects Page </h2>
+                <h1 className= " text-9xl flex justify-center text-green-400 font-bold cursive mb-5">My Projects</h1>
+                <h2 className= "text-5xl flex justify-center text-green-400 mb-14"> Welcome To My Projects Page </h2>
                 <section className="grid grid-cols-2 gap-8">
                 {projectData && projectData.map((project, index)=> (
                     <article className="relative rounded-lg shadow-xl bg-gray-300 p-16">
@@ -59,7 +60,7 @@ export default function Project() {
                                 {project.preojectType}
                             </span>
                             <p className="my-6 text-lg text-gray-700 leading-relaxed ">{project.description}</p>
-                            <a href={project.link} rel="noopener noreferrer" target="blank" className="text-green-600 text-lg font-bold hover:underline hover:text-red-400 text-xl mr-30">
+                            <a href={project.site} rel="noopener noreferrer" target="blank" className="text-green-600 text-lg font-bold hover:underline hover:text-red-400 text-xl mr-30">
                             View The Project {" "}
                             <span role="img" aria-label="right pointer">
                             👁
