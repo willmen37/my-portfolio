@@ -1,14 +1,14 @@
 import React from "react";
 import {SocialIcon} from "react-social-icons"
-import image from "../conectivity.jpg";
+import conectivity from "../conectivity.jpg";
 
 export default function Home() {
     return (
         <main>
             <img 
-                src={image} 
+                src={conectivity} 
                 alt="Full stack Dev" 
-                className=" absolute w-full" 
+                className="absolute w-full  " 
             />
                 <section className=" container mx-auto relative flex justify-center min-h-screen pt-10 lg:pt-64 px-8">
                     <div>

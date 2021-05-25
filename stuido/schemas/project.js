@@ -17,6 +17,7 @@ export default {
             name: "place",
             type: "string",
         },
+        
         {
             name: "description",
             type: "text",

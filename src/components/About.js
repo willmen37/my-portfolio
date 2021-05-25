@@ -1,6 +1,6 @@
 import React, {useEffect, useState}  from "react";
 import sanityClient from "../client.js";
-import Colombia from "../Colombia.jpg";
+import conectivity from "../conectivity.jpg";
 import imageUrlBuilder from "@sanity/image-url";
 import BlockContent from "@sanity/block-content-to-react";
 
@@ -29,10 +29,12 @@ export default function About() {
 
     return (
         <main className="relative">
-            <img src={Colombia} alt="developer times" className=" absolute w-full"/>
-                <div className="p-10 lg:pt-30 container mx-auto relative" >
+            <img src={conectivity} alt="developer times" className="bg-repeat absolute w-full "/>
+                <div className="p-20 lg:pt-30 container mx-auto relative" >
                 <section className="bg-blue-300 rounded-lg shadow-2xl lg:flex p-20">
-                    <img src={urlFor(author.authorImage).url()} className="rounded w-50 h-50 lg:w-80 lg:h-50 mr-20" alt={author.name}/>
+                    <div className="flex-auto rounded w-32 h-32 lg:w-80 lg:h-80 mr-20" >
+                        <img src={urlFor(author.authorImage).url()}  alt={author.name}/>
+                    </div>
                     <div className="text-lg flex flex-col justify-center">
                         <h1 className="cursive text-6xl text-green-800 mb-4">
                             Hey There. I'm{" "}
